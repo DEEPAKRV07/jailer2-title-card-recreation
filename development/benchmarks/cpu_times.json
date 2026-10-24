@@ -1,0 +1,12 @@
+{
+  "preview": {
+    "seconds_including_init_mux_validation": 132.15214899999955,
+    "frames": 654,
+    "width": 1280
+  },
+  "final": {
+    "seconds_including_init_mux_validation": 494.59727179999936,
+    "frames": 654,
+    "width": 3840
+  }
+}

@@ -1,0 +1,29 @@
+D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\cupy\_environment.py:286: UserWarning: CUDA path could not be detected. Set CUDA_PATH environment variable if CuPy fails to load.
+  warnings.warn(
+Compute backend: cupy_cuda | Encoder: h264_nvenc
+Current person: DEEPAK R V | Opening: D | Image: D:\boys-ai-videos\portrait_title_project\assets\Cyberpunk Digital Rain Portrait.png
+Foreground: cached mask reused (source unchanged).
+0/654 frames | 0.5s elapsed
+30/654 frames | 3.5s elapsed
+60/654 frames | 6.2s elapsed
+90/654 frames | 9.3s elapsed
+120/654 frames | 12.6s elapsed
+150/654 frames | 15.6s elapsed
+180/654 frames | 20.0s elapsed
+210/654 frames | 24.1s elapsed
+240/654 frames | 28.2s elapsed
+270/654 frames | 32.1s elapsed
+300/654 frames | 36.1s elapsed
+330/654 frames | 40.1s elapsed
+360/654 frames | 43.8s elapsed
+390/654 frames | 47.6s elapsed
+420/654 frames | 50.7s elapsed
+450/654 frames | 52.9s elapsed
+480/654 frames | 55.1s elapsed
+510/654 frames | 57.5s elapsed
+540/654 frames | 59.8s elapsed
+570/654 frames | 62.3s elapsed
+600/654 frames | 65.4s elapsed
+630/654 frames | 68.4s elapsed
+Validation: {'dimensions': True, 'fps': True, 'frames': True, 'h264': True, 'pixel_format': True, 'audio': True, 'audio_format': True, 'full_decode': True, 'duration': True}
+Render verified: D:\boys-ai-videos\portrait_title_project\output\PK_4K.mp4; total 79.0s; backend cupy_cuda; encoder h264_nvenc

@@ -1,0 +1,8 @@
+{
+  "simulated_error_and_absence_paths": {
+    "cuda_present_runtime_broken_stops_without_cpu_fallback": true,
+    "no_supported_device_explicit_cpu_reason": true,
+    "unavailable_hardware_encoder_uses_detected_cpu_encoder": true,
+    "hardware_encoding_selected_without_cuda_compute": true
+  }
+}

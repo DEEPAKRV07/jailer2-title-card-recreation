@@ -1,0 +1,45 @@
+D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\cupy\_environment.py:286: UserWarning: CUDA path could not be detected. Set CUDA_PATH environment variable if CuPy fails to load.
+  warnings.warn(
+Foreground: cached mask reused (source unchanged).
+Foreground: cached mask reused (source unchanged).
+Foreground: cached mask reused (source unchanged).
+Compute backend: cupy_cuda | Encoder: h264_nvenc
+Foreground: cached mask reused (source unchanged).
+0/271 frames | 0.2s elapsed
+30/271 frames | 1.0s elapsed
+60/271 frames | 2.2s elapsed
+90/271 frames | 3.6s elapsed
+120/271 frames | 4.8s elapsed
+150/271 frames | 6.1s elapsed
+180/271 frames | 7.3s elapsed
+210/271 frames | 8.6s elapsed
+240/271 frames | 9.8s elapsed
+270/271 frames | 11.1s elapsed
+Validation: {'dimensions': True, 'fps': True, 'frames': True, 'h264': True, 'pixel_format': True, 'audio': True, 'audio_format': True, 'full_decode': True, 'duration': True}
+Render verified: D:\boys-ai-videos\portrait_title_project\development\test cases\short_preset_preview.mp4; total 12.9s; backend cupy_cuda; encoder h264_nvenc
+{
+  "three_fields_applied": true,
+  "spaces_in_image_filename_work": true,
+  "advanced_animation_parameters_unchanged": true,
+  "old_polygon_not_reused": true,
+  "different_letter_changes_animation": true,
+  "different_name_changes_title": true,
+  "name_change_preserves_portrait": true,
+  "different_image_changes_portrait": true,
+  "absolute_windows_path_and_sidecar_mask": true,
+  "empty_name_readable_error": true,
+  "two_letters_readable_error": true,
+  "invalid_letter_readable_error": true,
+  "missing_image_readable_error": true,
+  "invalid_json_readable_error": true,
+  "preview_twice_replaces_generated_artifacts": true,
+  "preview_and_final_share_settings": true,
+  "untracked_preview_and_qa_files_preserved": true,
+  "source_assets_not_modified": true,
+  "existing_final_videos_preserved": true,
+  "advanced_config_bytes_unchanged": true,
+  "user_config_bytes_unchanged": true,
+  "both_presets_generate_frames": true,
+  "cleanup_path_traversal_rejected": true,
+  "short_preset_full_preview_verified": true
+}

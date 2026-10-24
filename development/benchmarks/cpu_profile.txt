@@ -1,0 +1,53 @@
+         106962 function calls (106828 primitive calls) in 89.598 seconds
+
+   Ordered by: cumulative time
+   List reduced from 424 to 45 due to restriction <45>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.091    0.091   82.810   82.810 D:\boys-ai-videos\portrait_title_project\development\baseline\renderer.py:22(__init__)
+        1    1.025    1.025   76.921   76.921 D:\boys-ai-videos\portrait_title_project\development\baseline\renderer.py:38(prepare_portrait)
+        1   75.640   75.640   75.640   75.640 {grabCut}
+       12    3.659    0.305    6.788    0.566 D:\boys-ai-videos\portrait_title_project\development\baseline\renderer.py:239(frame)
+        4    5.230    1.308    5.546    1.387 D:\boys-ai-videos\portrait_title_project\development\baseline\renderer.py:109(prepare_text)
+        6    1.126    0.188    1.253    0.209 D:\boys-ai-videos\portrait_title_project\development\baseline\renderer.py:140(text_frame)
+        6    0.249    0.041    0.953    0.159 D:\boys-ai-videos\portrait_title_project\development\baseline\renderer.py:201(portrait_frame)
+     6023    0.475    0.000    0.575    0.000 D:\boys-ai-videos\portrait_title_project\development\baseline\renderer.py:9(ease)
+     6062    0.009    0.000    0.459    0.000 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\numpy\_core\fromnumeric.py:2207(clip)
+     6062    0.005    0.000    0.450    0.000 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\numpy\_core\fromnumeric.py:48(_wrapfunc)
+     6062    0.434    0.000    0.434    0.000 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\numpy\_core\_methods.py:96(_clip)
+      246    0.001    0.000    0.416    0.002 {method 'clip' of 'numpy.ndarray' objects}
+      123    0.412    0.003    0.412    0.003 {method 'astype' of 'numpy.ndarray' objects}
+        1    0.131    0.131    0.164    0.164 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\numpy\lib\_index_tricks_impl.py:146(__getitem__)
+       26    0.161    0.006    0.161    0.006 {resize}
+        7    0.139    0.020    0.139    0.020 {warpAffine}
+        4    0.127    0.032    0.127    0.032 {morphologyEx}
+       12    0.100    0.008    0.100    0.008 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\numpy\_core\numeric.py:97(zeros_like)
+       24    0.049    0.002    0.091    0.004 {built-in method numpy.array}
+       13    0.072    0.006    0.072    0.006 {GaussianBlur}
+        6    0.012    0.002    0.066    0.011 D:\boys-ai-videos\portrait_title_project\development\baseline\renderer.py:184(rain)
+        6    0.019    0.003    0.058    0.010 D:\boys-ai-videos\portrait_title_project\development\baseline\renderer.py:160(field)
+     17/2    0.000    0.000    0.048    0.024 <frozen importlib._bootstrap>:1165(_find_and_load)
+     17/2    0.000    0.000    0.048    0.024 <frozen importlib._bootstrap>:1120(_find_and_load_unlocked)
+        1    0.047    0.047    0.047    0.047 {imread}
+     2587    0.047    0.000    0.047    0.000 {line}
+     17/2    0.000    0.000    0.046    0.023 <frozen importlib._bootstrap>:666(_load_unlocked)
+      6/2    0.000    0.000    0.046    0.023 <frozen importlib._bootstrap_external>:934(exec_module)
+     47/3    0.000    0.000    0.045    0.015 <frozen importlib._bootstrap>:233(_call_with_frames_removed)
+      6/5    0.000    0.000    0.045    0.009 <frozen importlib._bootstrap>:1207(_handle_fromlist)
+        3    0.000    0.000    0.045    0.015 {built-in method builtins.__import__}
+        1    0.000    0.000    0.043    0.043 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\numpy\__init__.py:717(__getattr__)
+        4    0.004    0.001    0.042    0.011 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\PIL\Image.py:804(__array_interface__)
+      6/2    0.000    0.000    0.041    0.021 {built-in method builtins.exec}
+        1    0.000    0.000    0.040    0.040 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\numpy\random\__init__.py:1(<module>)
+        4    0.001    0.000    0.038    0.009 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\PIL\Image.py:842(tobytes)
+     2452    0.033    0.000    0.033    0.000 {ellipse}
+        1    0.032    0.032    0.032    0.032 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\numpy\_core\numeric.py:1790(indices)
+     10/6    0.000    0.000    0.028    0.005 <frozen importlib._bootstrap_external>:1239(exec_module)
+     10/6    0.007    0.001    0.028    0.005 {built-in method _imp.exec_dynamic}
+       31    0.001    0.000    0.026    0.001 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\PIL\ImageDraw.py:530(text)
+        2    0.026    0.013    0.026    0.013 {Sobel}
+     5816    0.007    0.000    0.026    0.000 {method 'clip' of 'numpy.generic' objects}
+       31    0.000    0.000    0.025    0.001 D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\PIL\ImageDraw.py:583(draw_text)
+    19638    0.022    0.000    0.022    0.000 {built-in method builtins.round}
+
+

@@ -1,0 +1,99 @@
+{
+  "cuda_driver": {
+    "devices": 1,
+    "driver_version": 13010,
+    "init_status": 0
+  },
+  "opencv_cuda_devices": 0,
+  "opencv_opencl_available": true,
+  "opencv_opencl_enabled": true,
+  "ffmpeg": "D:\\boys-ai-videos\\portrait_title_project\\.venv\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+  "display_adapters": "[{\"Name\":\"Meta Virtual Monitor\",\"DriverVersion\":\"15.52.32.370\"},{\"Name\":\"NVIDIA GeForce RTX 3050 6GB Laptop GPU\",\"DriverVersion\":\"32.0.15.9174\"},{\"Name\":\"AMD Radeon(TM) Graphics\",\"DriverVersion\":\"32.0.11038.15002\"}]",
+  "nvidia_smi": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 591.74, 6144 MiB, 8.6",
+  "hardware_encoders": {
+    "h264_nvenc": {
+      "compiled": true,
+      "usable": true,
+      "returncode": 0,
+      "log": "",
+      "test_command": [
+        "D:\\boys-ai-videos\\portrait_title_project\\.venv\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-f",
+        "lavfi",
+        "-i",
+        "color=black:s=640x360:r=30",
+        "-frames:v",
+        "2",
+        "-c:v",
+        "h264_nvenc",
+        "-pix_fmt",
+        "yuv420p",
+        "-f",
+        "null",
+        "-"
+      ]
+    },
+    "h264_qsv": {
+      "compiled": true,
+      "usable": false,
+      "returncode": 2981409195,
+      "log": "[h264_qsv @ 000001ba25644c80] Error creating a MFX session: -9.\n[h264_qsv @ 000001ba25644c80] The current mfx implementation is not supported, try next mfx implementation.\n[h264_qsv @ 000001ba25644c80] Error creating a MFX session: -9.\n[vost#0:0/h264_qsv @ 000001ba25644a00] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 000001ba25645c00] Error sending frames to consumers: Unknown error occurred\n[vf#0:0 @ 000001ba25645c00] Task finished with error code: -1313558101 (Unknown error occurred)\n[vf#0:0 @ 000001ba25645c00] Terminating thread with return code -1313558101 (Unknown error occurred)\n[vost#0:0/h264_qsv @ 000001ba25644a00] Could not open encoder before EOF\n[vost#0:0/h264_qsv @ 000001ba25644a00] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/h264_qsv @ 000001ba25644a00] Terminating thread with return code -22 (Invalid argument)\n[out#0/null @ 000001ba255eabc0] Nothing was written into output file, because at least one of its streams received no packets.",
+      "test_command": [
+        "D:\\boys-ai-videos\\portrait_title_project\\.venv\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-f",
+        "lavfi",
+        "-i",
+        "color=black:s=640x360:r=30",
+        "-frames:v",
+        "2",
+        "-c:v",
+        "h264_qsv",
+        "-pix_fmt",
+        "yuv420p",
+        "-f",
+        "null",
+        "-"
+      ]
+    },
+    "h264_amf": {
+      "compiled": true,
+      "usable": true,
+      "returncode": 0,
+      "log": "",
+      "test_command": [
+        "D:\\boys-ai-videos\\portrait_title_project\\.venv\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+        "-hide_banner",
+        "-v",
+        "error",
+        "-f",
+        "lavfi",
+        "-i",
+        "color=black:s=640x360:r=30",
+        "-frames:v",
+        "2",
+        "-c:v",
+        "h264_amf",
+        "-pix_fmt",
+        "yuv420p",
+        "-f",
+        "null",
+        "-"
+      ]
+    }
+  },
+  "compute": {
+    "backend": "cupy_cuda",
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "self_test_sum": 22898100224.0,
+    "self_test_cuda_ms": 92.60924530029297,
+    "cupy_version": "14.2.0"
+  },
+  "encoder": "h264_nvenc",
+  "encoding_reason": "Hardware encoder passed an actual two-frame encode"
+}

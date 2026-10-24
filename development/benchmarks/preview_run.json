@@ -1,0 +1,363 @@
+{
+  "effective_config": {
+    "sequence_preset": "extended_credits",
+    "seed": 271021,
+    "output": {
+      "width": 3840,
+      "height": 2160,
+      "fps": 30,
+      "supersampling": 1,
+      "duration": null,
+      "path": "development/benchmarks/gpu_final.mp4",
+      "crf": 17,
+      "encoder": "libx264",
+      "encoder_preset": "fast",
+      "bitrate": null,
+      "preview_width": 1280,
+      "preview_path": "development/benchmarks/gpu_preview.mp4",
+      "preview_crf": 20
+    },
+    "presets": {
+      "extended_credits": {
+        "duration": 21.8,
+        "portrait_offset": 3.8,
+        "portrait_fade_start": 12.65,
+        "portrait_fade_end": 13.5,
+        "audio": "assets/extended_original_audio.m4a"
+      },
+      "portrait_reveal": {
+        "duration": 9.033333333333333,
+        "portrait_offset": 0,
+        "portrait_fade_start": 10,
+        "portrait_fade_end": 11,
+        "audio": "assets/short_original_audio.m4a"
+      }
+    },
+    "portrait": {
+      "image": "assets/Cyberpunk Digital Rain Portrait.png",
+      "mask": null,
+      "fit": "contain",
+      "crop": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "subject_polygon": null,
+      "anchor": [
+        0.57,
+        0.055
+      ],
+      "height_fraction": 0.94,
+      "feather_px_1080": 2.5,
+      "brightness": 1.25,
+      "contrast": 1.35,
+      "black_level": 0.15,
+      "gamma": 1.4,
+      "stipple_strength": 0.3,
+      "line_strength": 0.25,
+      "edge_strength": 0.13,
+      "reveal_start": 2.35,
+      "reveal_end": 5.8,
+      "reveal_direction": "top_down",
+      "particle_count": 2800,
+      "particle_size_1080": 1.0,
+      "particle_brightness": 1.35,
+      "travel_seconds": 0.85,
+      "drift": 0.008,
+      "turbulence": 0.7
+    },
+    "rain": {
+      "density": 190,
+      "speed": 0.24,
+      "length": 0.1,
+      "brightness": 1.2,
+      "settled_density": 0.035
+    },
+    "particles": {
+      "count": 540,
+      "size_1080": 2.0,
+      "brightness": 1.4
+    },
+    "palette": {
+      "background": [
+        0,
+        0,
+        0
+      ],
+      "particle": [
+        242,
+        247,
+        255
+      ],
+      "text": [
+        208,
+        234,
+        255
+      ],
+      "glow": [
+        120,
+        182,
+        235
+      ],
+      "accent": [
+        122,
+        187,
+        255
+      ]
+    },
+    "effects": {
+      "glow_radius_1080": 8,
+      "glow_strength": 0.24,
+      "glint_frequency": 0.7,
+      "glint_intensity": 1.25,
+      "motion_blur_shutter": 0.3,
+      "camera_zoom": 0.015
+    },
+    "typography": {
+      "font": "C:/Windows/Fonts/georgiab.ttf",
+      "fallback_font": "C:/Windows/Fonts/timesbd.ttf",
+      "tracking": 0.012,
+      "alignment": "center",
+      "safe_area": 0.08,
+      "jewel_spacing_1080": 10
+    },
+    "opening": {
+      "letter": "D",
+      "star_start": 0.0,
+      "star_end": 1.85,
+      "letter_start": 2.05,
+      "letter_end": 3.9,
+      "font_height": 0.61,
+      "position": [
+        0.5,
+        0.5
+      ],
+      "fade_in": 0.65,
+      "fade_out": 0.28
+    },
+    "titles": [
+      {
+        "text": "DEEPAK R V",
+        "subtitle": "",
+        "start": 12.7,
+        "end": 21.8,
+        "fade_in": 0.8,
+        "fade_out": 0.65,
+        "font_height": 0.19,
+        "subtitle_height": 0.07,
+        "position": [
+          0.5,
+          0.5
+        ],
+        "tracking": 0.016,
+        "alignment": "center"
+      },
+      {
+        "text": "DEEPAK R V",
+        "subtitle": "",
+        "start": 16.0,
+        "end": 18.0,
+        "fade_in": 0.45,
+        "fade_out": 0.25,
+        "font_height": 0.2,
+        "position": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "text": "DEEPAK R V",
+        "subtitle": "",
+        "start": 18.0,
+        "end": 19.5,
+        "fade_in": 0.35,
+        "fade_out": 0.2,
+        "font_height": 0.2,
+        "position": [
+          0.5,
+          0.5
+        ]
+      },
+      {
+        "text": "",
+        "subtitle": "",
+        "start": 19.5,
+        "end": 21.8,
+        "fade_in": 0.4,
+        "fade_out": 0.65,
+        "font_height": 0.2,
+        "position": [
+          0.5,
+          0.5
+        ]
+      }
+    ],
+    "audio": {
+      "enabled": true,
+      "source": null,
+      "offset": 0,
+      "volume": 0.65,
+      "fade_in": 0,
+      "fade_out": 0,
+      "codec": "aac",
+      "bitrate": "192k",
+      "sample_rate": 44100,
+      "channels": 2
+    },
+    "qa": {
+      "path": "development/benchmarks",
+      "preview_path": "development/benchmarks",
+      "timestamps": [
+        0.5,
+        2.9,
+        4.35,
+        6.25,
+        7.8,
+        9.6,
+        11.5,
+        13.05,
+        14.5,
+        17.4,
+        20.3,
+        21.6
+      ]
+    }
+  },
+  "effective_config_sha256": "09312fe61608ca3334f6c2527ca094394f8ded004feda1c874bc7c5fb1e85c05",
+  "hardware": {
+    "cuda_driver": {
+      "devices": 1,
+      "driver_version": 13010,
+      "init_status": 0
+    },
+    "opencv_cuda_devices": 0,
+    "opencv_opencl_available": true,
+    "opencv_opencl_enabled": true,
+    "ffmpeg": "D:\\boys-ai-videos\\portrait_title_project\\.venv\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "display_adapters": "[{\"Name\":\"Meta Virtual Monitor\",\"DriverVersion\":\"15.52.32.370\"},{\"Name\":\"NVIDIA GeForce RTX 3050 6GB Laptop GPU\",\"DriverVersion\":\"32.0.15.9174\"},{\"Name\":\"AMD Radeon(TM) Graphics\",\"DriverVersion\":\"32.0.11038.15002\"}]",
+    "nvidia_smi": "NVIDIA GeForce RTX 3050 6GB Laptop GPU, 591.74, 6144 MiB, 8.6",
+    "hardware_encoders": {
+      "h264_nvenc": {
+        "compiled": true,
+        "usable": true,
+        "returncode": 0,
+        "log": "",
+        "test_command": [
+          "D:\\boys-ai-videos\\portrait_title_project\\.venv\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-f",
+          "lavfi",
+          "-i",
+          "color=black:s=640x360:r=30",
+          "-frames:v",
+          "2",
+          "-c:v",
+          "h264_nvenc",
+          "-pix_fmt",
+          "yuv420p",
+          "-f",
+          "null",
+          "-"
+        ]
+      },
+      "h264_qsv": {
+        "compiled": true,
+        "usable": false,
+        "returncode": 2981409195,
+        "log": "[h264_qsv @ 000002dd100a4c80] Error creating a MFX session: -9.\n[h264_qsv @ 000002dd100a4c80] The current mfx implementation is not supported, try next mfx implementation.\n[h264_qsv @ 000002dd100a4c80] Error creating a MFX session: -9.\n[vost#0:0/h264_qsv @ 000002dd100a4a00] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 000002dd100a5c00] Error sending frames to consumers: Unknown error occurred\n[vf#0:0 @ 000002dd100a5c00] Task finished with error code: -1313558101 (Unknown error occurred)\n[vf#0:0 @ 000002dd100a5c00] Terminating thread with return code -1313558101 (Unknown error occurred)\n[vost#0:0/h264_qsv @ 000002dd100a4a00] Could not open encoder before EOF\n[vost#0:0/h264_qsv @ 000002dd100a4a00] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/h264_qsv @ 000002dd100a4a00] Terminating thread with return code -22 (Invalid argument)\n[out#0/null @ 000002dd1004abc0] Nothing was written into output file, because at least one of its streams received no packets.",
+        "test_command": [
+          "D:\\boys-ai-videos\\portrait_title_project\\.venv\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-f",
+          "lavfi",
+          "-i",
+          "color=black:s=640x360:r=30",
+          "-frames:v",
+          "2",
+          "-c:v",
+          "h264_qsv",
+          "-pix_fmt",
+          "yuv420p",
+          "-f",
+          "null",
+          "-"
+        ]
+      },
+      "h264_amf": {
+        "compiled": true,
+        "usable": true,
+        "returncode": 0,
+        "log": "",
+        "test_command": [
+          "D:\\boys-ai-videos\\portrait_title_project\\.venv\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-v",
+          "error",
+          "-f",
+          "lavfi",
+          "-i",
+          "color=black:s=640x360:r=30",
+          "-frames:v",
+          "2",
+          "-c:v",
+          "h264_amf",
+          "-pix_fmt",
+          "yuv420p",
+          "-f",
+          "null",
+          "-"
+        ]
+      }
+    },
+    "compute": {
+      "backend": "cupy_cuda",
+      "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "self_test_sum": 22898100224.0,
+      "self_test_cuda_ms": 91.1961898803711,
+      "cupy_version": "14.2.0"
+    },
+    "encoder": "h264_nvenc",
+    "encoding_reason": "Hardware encoder passed an actual two-frame encode"
+  },
+  "telemetry": {
+    "backend": "CuPy CUDA",
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "frames_executed": 654,
+    "cuda_event_frame_ms": 15388.018370628357,
+    "kernel_operation_counts": {
+      "cuda_grayscale": 655,
+      "cuda_image_sample": 2195,
+      "cuda_gaussian": 655,
+      "cuda_sobel": 2,
+      "cuda_morphology": 4,
+      "cuda_composite": 654,
+      "cuda_rgb_to_nv12": 654,
+      "cuda_primitive_raster": 794,
+      "cuda_temporal_blur": 653,
+      "cuda_text_reveal": 359,
+      "cuda_particle_equations": 290
+    },
+    "cuda_runtime": 12090,
+    "cuda_driver": 13010,
+    "device_memory_used_bytes": 57264128,
+    "cpu_exceptions": [
+      "File/image decoding and PNG/JPEG writing",
+      "Pillow/FreeType font shaping and glyph masks (no matching GPU API)",
+      "OpenCV GrabCut segmentation, cached by source content (installed OpenCV has no CUDA GrabCut)",
+      "NumPy PCG64 seeded random sampling to retain seeded sequence semantics",
+      "Small scalar timeline/control and Gaussian/affine coefficient generation",
+      "FFmpeg AAC audio encoding and MP4 muxing"
+    ]
+  },
+  "seconds_including_init_mux_validation": 37.17997439999999,
+  "seconds_after_renderer_init": 36.57917356491089,
+  "frames": 654,
+  "output": "D:\\boys-ai-videos\\portrait_title_project\\development\\benchmarks\\gpu_preview.mp4",
+  "width": 1280,
+  "height": 720
+}

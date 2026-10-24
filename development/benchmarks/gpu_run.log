@@ -1,0 +1,55 @@
+D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\cupy\_environment.py:286: UserWarning: CUDA path could not be detected. Set CUDA_PATH environment variable if CuPy fails to load.
+  warnings.warn(
+Compute backend: cupy_cuda | Encoder: h264_nvenc
+Foreground: cached mask reused (source unchanged).
+0/654 frames | 15.8s elapsed
+30/654 frames | 16.6s elapsed
+60/654 frames | 17.1s elapsed
+90/654 frames | 18.2s elapsed
+120/654 frames | 18.8s elapsed
+150/654 frames | 19.4s elapsed
+180/654 frames | 20.6s elapsed
+210/654 frames | 21.7s elapsed
+240/654 frames | 22.8s elapsed
+270/654 frames | 23.9s elapsed
+300/654 frames | 25.1s elapsed
+330/654 frames | 26.2s elapsed
+360/654 frames | 27.6s elapsed
+390/654 frames | 28.8s elapsed
+420/654 frames | 29.7s elapsed
+450/654 frames | 30.3s elapsed
+480/654 frames | 30.9s elapsed
+510/654 frames | 31.4s elapsed
+540/654 frames | 32.0s elapsed
+570/654 frames | 32.6s elapsed
+600/654 frames | 33.2s elapsed
+630/654 frames | 33.8s elapsed
+Validation: {'dimensions': True, 'fps': True, 'frames': True, 'h264': True, 'pixel_format': True, 'audio': True, 'audio_format': True, 'full_decode': True, 'duration': True}
+Render verified: D:\boys-ai-videos\portrait_title_project\development\benchmarks\gpu_preview.mp4; total 37.2s; backend cupy_cuda; encoder h264_nvenc
+preview 37.18247700000029
+Foreground: cached mask reused (source unchanged).
+0/654 frames | 5.1s elapsed
+30/654 frames | 7.6s elapsed
+60/654 frames | 10.2s elapsed
+90/654 frames | 12.9s elapsed
+120/654 frames | 15.6s elapsed
+150/654 frames | 18.1s elapsed
+180/654 frames | 21.4s elapsed
+210/654 frames | 25.4s elapsed
+240/654 frames | 29.3s elapsed
+270/654 frames | 33.1s elapsed
+300/654 frames | 37.0s elapsed
+330/654 frames | 40.9s elapsed
+360/654 frames | 44.9s elapsed
+390/654 frames | 49.1s elapsed
+420/654 frames | 52.6s elapsed
+450/654 frames | 55.4s elapsed
+480/654 frames | 58.1s elapsed
+510/654 frames | 61.2s elapsed
+540/654 frames | 64.1s elapsed
+570/654 frames | 66.9s elapsed
+600/654 frames | 69.8s elapsed
+630/654 frames | 72.7s elapsed
+Validation: {'dimensions': True, 'fps': True, 'frames': True, 'h264': True, 'pixel_format': True, 'audio': True, 'audio_format': True, 'full_decode': True, 'duration': True}
+Render verified: D:\boys-ai-videos\portrait_title_project\development\benchmarks\gpu_final.mp4; total 85.6s; backend cupy_cuda; encoder h264_nvenc
+final 85.63257280000016

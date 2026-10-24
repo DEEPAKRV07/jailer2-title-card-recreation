@@ -1,0 +1,270 @@
+{
+  "method": "All 925 video frames decoded to 480x270 RGB; per-frame luma, bright coverage, centroid and absolute frame change saved. Visually inspected 0.5-second contact sheets plus 0.1-second samples from 15\u201318 seconds. Original timestamp-matched larger frames inspected in comparison sheets. No reference pixels used in renderer.",
+  "timing_precision": "Stage boundaries are visual estimates, generally +/-0.1\u20130.3 seconds, not recovered authoring keyframes. The 3.766667-second field cut is detected at frame 113 in the every-frame difference trace. Rates/easing/depth descriptions are qualitative observations, not measured optical flow.",
+  "short": [
+    {
+      "start": 0,
+      "end": 1.8,
+      "duration": 1.8,
+      "name": "Star field / flying fragments",
+      "composition": "Full frame, most brightness below center",
+      "motion": "Swirling/tumbling fragments, drifting laterally and into depth; no recoverable exact velocity",
+      "particles": "Hundreds of varied-size stars and fragments, high contrast",
+      "transition": "Field thins; individual trails appear",
+      "palette": "black / silver white"
+    },
+    {
+      "start": 1.8,
+      "end": 3.0,
+      "duration": 1.2,
+      "name": "Vertical rain",
+      "composition": "Mostly central columns spanning the frame",
+      "motion": "Predominantly vertical streaks, downward trails; apparent speed varies with depth",
+      "particles": "Sparse bright heads, dotted tails, narrow elongated lights",
+      "transition": "Overlap from fragments into rain",
+      "palette": "black / silver white"
+    },
+    {
+      "start": 3.0,
+      "end": 5.7,
+      "duration": 2.7,
+      "name": "Portrait assembly",
+      "composition": "Head near x=.55, y=.28; shoulders widen through lower half",
+      "motion": "Streaks coalesce into face/hair/shoulders; motion settles smoothly",
+      "particles": "Scattered high-luma contour samples and long vertical strands",
+      "transition": "Gradual spatial accumulation, not a full photograph fade",
+      "palette": "black / silver white"
+    },
+    {
+      "start": 5.7,
+      "end": 9.033333,
+      "duration": 3.333333,
+      "name": "Portrait hold",
+      "composition": "Approx. bounds x=.22\u2013.73, y=.04\u20131; source pose is asymmetric",
+      "motion": "Near-static face; small particles continue near bottom",
+      "particles": "Black facial/clothing areas, white brows/edges, sparse vertical shirt trails",
+      "transition": "Stable hold to clip end",
+      "palette": "black / silver white"
+    }
+  ],
+  "extended": [
+    {
+      "start": 0,
+      "end": 1.9,
+      "duration": 1.9,
+      "name": "Faceted metallic star",
+      "composition": "Initially oversized, centered; contracts to central luminous point",
+      "motion": "Rotation and rapid recession / scale decrease; eased settling",
+      "particles": "No dense particle field yet; concentrated glow",
+      "transition": "Starts black at frame 0, bright star at frame 1, shrinks into black",
+      "palette": "black / silver white"
+    },
+    {
+      "start": 1.9,
+      "end": 3.766667,
+      "duration": 1.866667,
+      "name": "Jeweled S",
+      "composition": "Centered letter, approx. width .33 and height .62",
+      "motion": "Fragmented/partial emergence, then stable letter with glints",
+      "particles": "Close regular crystal grid, cool highlights",
+      "transition": "Bright expansion/flash around frames 110\u2013112; cut to field at frame 113",
+      "palette": "black / silver / cool blue white"
+    },
+    {
+      "start": 3.766667,
+      "end": 5.7,
+      "duration": 1.933333,
+      "name": "Stars and flying fragments",
+      "composition": "Low sparkling horizon then scattered across full frame",
+      "motion": "Upward/lateral scattering, tumbling, depth variation",
+      "particles": "Hundreds of stars, several larger foreground stars",
+      "transition": "Fragments turn into rain",
+      "palette": "black / silver white"
+    },
+    {
+      "start": 5.7,
+      "end": 7.0,
+      "duration": 1.3,
+      "name": "Digital rain onset",
+      "composition": "Central columns; emerging subject volume",
+      "motion": "Vertical elongated lights, fast local streaking",
+      "particles": "Sparse bright lights with dotted/continuous tails",
+      "transition": "Progressive overlap with subject",
+      "palette": "black / silver white"
+    },
+    {
+      "start": 7.0,
+      "end": 9.6,
+      "duration": 2.6,
+      "name": "Portrait assembly",
+      "composition": "Head approx x=.55, y=.27; torso approx x=.22\u2013.72",
+      "motion": "Contours consolidate; long strands settle, small apparent framing change",
+      "particles": "Fine silver points and vertical lines; strong rim highlights",
+      "transition": "Spatial reveal becomes stable portrait",
+      "palette": "black / silver white"
+    },
+    {
+      "start": 9.6,
+      "end": 12.7,
+      "duration": 3.1,
+      "name": "Portrait hold",
+      "composition": "Head and torso fill most of image height; deep surrounding black",
+      "motion": "Very limited portrait motion; ambient particles below",
+      "particles": "Dense hair/face texture, sparse shirt lines; black negative space",
+      "transition": "Title begins overlapping near end",
+      "palette": "black / silver white"
+    },
+    {
+      "start": 12.7,
+      "end": 13.5,
+      "duration": 0.8,
+      "name": "Portrait to first title",
+      "composition": "Centered two-line title over fading portrait",
+      "motion": "Portrait dims while dots form title",
+      "particles": "Dispersing floor particles and jewel assembly",
+      "transition": "Soft overlapping dissolve",
+      "palette": "black / silver white"
+    },
+    {
+      "start": 13.5,
+      "end": 15.9,
+      "duration": 2.4,
+      "name": "THARAN / CREATIONS reference card",
+      "composition": "Centered stacked serif lines; safe margins",
+      "motion": "Slow enlargement; glints travel over letters",
+      "particles": "Regular gemstones with small blooms",
+      "transition": "Rapid smooth fade near 15.6\u201315.9",
+      "palette": "black / silver / pale blue"
+    },
+    {
+      "start": 15.9,
+      "end": 17.8,
+      "duration": 1.9,
+      "name": "SURYA / THARAN reference card",
+      "composition": "Centered narrow two-line dotted lettering",
+      "motion": "Dots appear sequentially; stable short hold",
+      "particles": "Sparse blue points, little bloom",
+      "transition": "Fades around 17.4\u201317.7",
+      "palette": "black / saturated blue"
+    },
+    {
+      "start": 17.8,
+      "end": 19.7,
+      "duration": 1.9,
+      "name": "EDITOR reference card",
+      "composition": "Centered single bold serif word",
+      "motion": "Particle assembly then slight expansion",
+      "particles": "Silver jewels and localized glints",
+      "transition": "Fade before next card",
+      "palette": "black / silver / pale blue"
+    },
+    {
+      "start": 19.7,
+      "end": 21.8,
+      "duration": 2.1,
+      "name": "VISUAL / NINJA reference card",
+      "composition": "Centered two-line serif text",
+      "motion": "Particle formation then slow enlargement",
+      "particles": "Silver gemstones; glints above letters",
+      "transition": "Fade to black by end",
+      "palette": "black / silver / pale blue"
+    }
+  ],
+  "adaptation": {
+    "opening": "K instead of S",
+    "main_name": "KARTHIKEYAN",
+    "later_credits": "Empty configurable credit slots; main name held through them. The original blue credit card and subsequent copy are not reproduced.",
+    "portrait": "Supplied 1600x899 stylized JPEG. Uniform-scale masked composition preserves pose and features, so shoulder breadth and head inclination differ.",
+    "flash": "Reference full-screen flash is replaced with a softened transition."
+  },
+  "short_audio_landmarks": {
+    "measurement": "0.1s RMS blocks after 8 kHz mono analysis resampling; no semantic listening claims. Stereo original peak measured separately for output headroom.",
+    "highest_energy_blocks": [
+      {
+        "time": 0.1,
+        "rms": 0.8390495181083679,
+        "peak": 1.3753383159637451
+      },
+      {
+        "time": 2.7,
+        "rms": 0.8277567028999329,
+        "peak": 1.3681870698928833
+      },
+      {
+        "time": 5.5,
+        "rms": 0.8056328892707825,
+        "peak": 1.3947556018829346
+      },
+      {
+        "time": 5.4,
+        "rms": 0.8003941178321838,
+        "peak": 1.370261311531067
+      },
+      {
+        "time": 1.8,
+        "rms": 0.7932570576667786,
+        "peak": 1.3737256526947021
+      },
+      {
+        "time": 3.2,
+        "rms": 0.7636581063270569,
+        "peak": 1.3977887630462646
+      },
+      {
+        "time": 0.0,
+        "rms": 0.7469680905342102,
+        "peak": 1.3681576251983643
+      },
+      {
+        "time": 0.5,
+        "rms": 0.7299529314041138,
+        "peak": 1.2992455959320068
+      }
+    ]
+  },
+  "extended_audio_landmarks": {
+    "measurement": "0.1s RMS blocks after 8 kHz mono analysis resampling; no semantic listening claims. Stereo original peak measured separately for output headroom.",
+    "highest_energy_blocks": [
+      {
+        "time": 2.9,
+        "rms": 0.9292141199111938,
+        "peak": 1.4250588417053223
+      },
+      {
+        "time": 9.3,
+        "rms": 0.9192059636116028,
+        "peak": 1.4026093482971191
+      },
+      {
+        "time": 9.4,
+        "rms": 0.8816714882850647,
+        "peak": 1.4252288341522217
+      },
+      {
+        "time": 14.7,
+        "rms": 0.8732974529266357,
+        "peak": 1.4224982261657715
+      },
+      {
+        "time": 8.4,
+        "rms": 0.8639366030693054,
+        "peak": 1.3895375728607178
+      },
+      {
+        "time": 12.0,
+        "rms": 0.8629337549209595,
+        "peak": 1.424426555633545
+      },
+      {
+        "time": 3.8,
+        "rms": 0.8612776398658752,
+        "peak": 1.4170148372650146
+      },
+      {
+        "time": 15.2,
+        "rms": 0.8606325387954712,
+        "peak": 1.3930109739303589
+      }
+    ]
+  }
+}

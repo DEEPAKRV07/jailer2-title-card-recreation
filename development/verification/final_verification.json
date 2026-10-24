@@ -1,0 +1,50 @@
+{
+  "same_effective_preview_final_settings": true,
+  "advanced_config_sha256": "4fbcafecaeabc11f4d5f037d5a7321e60b0d6d384f4034952a570d469829af87",
+  "encoded_frame_comparison": [
+    {
+      "time": 0.5,
+      "mean_absolute_channel_error": 0.2602444589138031,
+      "psnr_db": 49.65783307932707
+    },
+    {
+      "time": 2.9,
+      "mean_absolute_channel_error": 0.35160231590270996,
+      "psnr_db": 44.58883233079063
+    },
+    {
+      "time": 6.266666666666667,
+      "mean_absolute_channel_error": 0.09817969799041748,
+      "psnr_db": 55.394143284414604
+    },
+    {
+      "time": 7.8,
+      "mean_absolute_channel_error": 0.5195385813713074,
+      "psnr_db": 46.683270169990855
+    },
+    {
+      "time": 9.6,
+      "mean_absolute_channel_error": 0.4415525197982788,
+      "psnr_db": 47.15629398945599
+    },
+    {
+      "time": 13.066666666666666,
+      "mean_absolute_channel_error": 0.3987323045730591,
+      "psnr_db": 47.82908505289036
+    },
+    {
+      "time": 14.5,
+      "mean_absolute_channel_error": 0.2405255287885666,
+      "psnr_db": 46.30702255651911
+    }
+  ],
+  "final_runtime_seconds": 78.97839609999937,
+  "backend": {
+    "backend": "cupy_cuda",
+    "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "self_test_sum": 22898100224.0,
+    "self_test_cuda_ms": 142.91920471191406,
+    "cupy_version": "14.2.0"
+  },
+  "encoder": "h264_nvenc"
+}

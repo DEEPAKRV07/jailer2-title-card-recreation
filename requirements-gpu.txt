@@ -1,0 +1,2 @@
+cupy-cuda12x==14.2.0
+cuda-toolkit[cudart,nvrtc]==12.9.2.0

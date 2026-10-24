@@ -1,0 +1,56 @@
+D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\cupy\_environment.py:286: UserWarning: CUDA path could not be detected. Set CUDA_PATH environment variable if CuPy fails to load.
+  warnings.warn(
+Foreground: cached mask reused (source unchanged).
+Foreground: cached mask reused (source unchanged).
+[
+  {
+    "time": 0.5,
+    "mean_absolute_channel_error": 0.020862630208333333,
+    "psnr": 44.807948433265736
+  },
+  {
+    "time": 2.5,
+    "mean_absolute_channel_error": 0.01052662037037037,
+    "psnr": 47.14616657123958
+  },
+  {
+    "time": 2.9,
+    "mean_absolute_channel_error": 0.0,
+    "psnr": 118.13080360867912
+  },
+  {
+    "time": 4.35,
+    "mean_absolute_channel_error": 0.3503247974537037,
+    "psnr": 29.50957487255325
+  },
+  {
+    "time": 6.25,
+    "mean_absolute_channel_error": 0.5489123987268518,
+    "psnr": 29.246276603094145
+  },
+  {
+    "time": 7.8,
+    "mean_absolute_channel_error": 8.454270833333334,
+    "psnr": 17.75751259921448
+  },
+  {
+    "time": 9.6,
+    "mean_absolute_channel_error": 0.14098271122685185,
+    "psnr": 45.04245020775757
+  },
+  {
+    "time": 13.05,
+    "mean_absolute_channel_error": 0.08643265335648148,
+    "psnr": 49.82240390673865
+  },
+  {
+    "time": 14.5,
+    "mean_absolute_channel_error": 7.233796296296296e-07,
+    "psnr": 109.53714086002728
+  },
+  {
+    "time": 17.4,
+    "mean_absolute_channel_error": 3.616898148148148e-07,
+    "psnr": 112.54744081666709
+  }
+]

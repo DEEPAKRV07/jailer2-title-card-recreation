@@ -1,0 +1,11 @@
+{
+  "kind": "qa",
+  "files": {
+    "preview_run.json": "2e5b9a668254581fc6a079287f52429c794ebda5ac598f834f12c4b532266f14",
+    "preview_encode.log": "d726b0a0bd9e1cb7f000902a32e1819570a2a9e488cc424974c13a5cb62efdd2",
+    "preview_commands.json": "71879a9e71d0ef1dd123031914f25cc7d1cb6ff2367956e4a1c8614c3a648673",
+    "preview_frame_metrics.csv": "969bda0f9a50fe0e441dd0a0a3a7e926cbd7dc11dd60594752ee6d0b48d59b30",
+    "PK_preview_validation.json": "548f7d8a29a7ce0ccc9615a5c5e79339e9d79818f717cb5dc7afb4a133e0d9b8",
+    "current_settings.json": "b7b90b4151754fdbc7b2040377ebf4bd461effc5699952b703946bf48b840be1"
+  }
+}

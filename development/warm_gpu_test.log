@@ -1,0 +1,5 @@
+D:\boys-ai-videos\portrait_title_project\.venv\Lib\site-packages\cupy\_environment.py:286: UserWarning: CUDA path could not be detected. Set CUDA_PATH environment variable if CuPy fails to load.
+  warnings.warn(
+Foreground: cached mask reused (source unchanged).
+12 warm frames 5.968451499999901
+{'backend': 'CuPy CUDA', 'device': 'NVIDIA GeForce RTX 3050 6GB Laptop GPU', 'frames_executed': 12, 'cuda_event_frame_ms': 5948.908458709717, 'kernel_operation_counts': {'cuda_grayscale': 1, 'cuda_image_sample': 40, 'cuda_gaussian': 13, 'cuda_sobel': 2, 'cuda_morphology': 2, 'cuda_particle_equations': 12, 'cuda_primitive_raster': 24, 'cuda_composite': 12}, 'cuda_runtime': 12090, 'cuda_driver': 13010, 'device_memory_used_bytes': 36986880, 'cpu_exceptions': ['File/image decoding and PNG/JPEG writing', 'Pillow/FreeType font shaping and glyph masks (no matching GPU API)', 'OpenCV GrabCut segmentation, cached by source content (installed OpenCV has no CUDA GrabCut)', 'NumPy PCG64 seeded random sampling to retain seeded sequence semantics', 'Small scalar timeline/control and Gaussian/affine coefficient generation', 'FFmpeg AAC audio encoding and MP4 muxing']}

@@ -1,0 +1,9 @@
+{
+  "repeat_frame_is_deterministic": true,
+  "changing_text_does_not_change_portrait": true,
+  "no_flat_rectangular_photo_background": true,
+  "reveal_accumulates_subject_structure": true,
+  "finite_image_values": true,
+  "title_changes_visible_letter": true,
+  "portrait_source_bytes_preserved": true
+}

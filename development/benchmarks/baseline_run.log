@@ -1,0 +1,49 @@
+0/654 frames | 0.1s elapsed
+30/654 frames | 1.5s elapsed
+60/654 frames | 2.9s elapsed
+90/654 frames | 5.7s elapsed
+120/654 frames | 7.5s elapsed
+150/654 frames | 9.2s elapsed
+180/654 frames | 11.0s elapsed
+210/654 frames | 13.4s elapsed
+240/654 frames | 17.4s elapsed
+270/654 frames | 20.2s elapsed
+300/654 frames | 22.4s elapsed
+330/654 frames | 24.6s elapsed
+360/654 frames | 26.8s elapsed
+390/654 frames | 29.5s elapsed
+420/654 frames | 32.5s elapsed
+450/654 frames | 34.4s elapsed
+480/654 frames | 36.3s elapsed
+510/654 frames | 39.0s elapsed
+540/654 frames | 41.0s elapsed
+570/654 frames | 43.6s elapsed
+600/654 frames | 45.4s elapsed
+630/654 frames | 47.3s elapsed
+Render finished: D:\boys-ai-videos\portrait_title_project\development\benchmarks\cpu_preview.mp4; 49.7s
+Validation: {'dimensions': True, 'fps': True, 'frames': True, 'h264': True, 'pixel_format': True, 'audio': True, 'audio_format': True, 'full_decode': True, 'duration': True}
+0/654 frames | 1.7s elapsed
+30/654 frames | 16.0s elapsed
+60/654 frames | 29.6s elapsed
+90/654 frames | 57.6s elapsed
+120/654 frames | 73.8s elapsed
+150/654 frames | 86.8s elapsed
+180/654 frames | 100.1s elapsed
+210/654 frames | 117.5s elapsed
+240/654 frames | 137.8s elapsed
+270/654 frames | 157.2s elapsed
+300/654 frames | 175.0s elapsed
+330/654 frames | 192.8s elapsed
+360/654 frames | 210.2s elapsed
+390/654 frames | 232.4s elapsed
+420/654 frames | 258.9s elapsed
+450/654 frames | 274.5s elapsed
+480/654 frames | 290.4s elapsed
+510/654 frames | 314.5s elapsed
+540/654 frames | 331.3s elapsed
+570/654 frames | 353.4s elapsed
+600/654 frames | 370.5s elapsed
+630/654 frames | 386.8s elapsed
+Render finished: D:\boys-ai-videos\portrait_title_project\development\benchmarks\cpu_final.mp4; 401.0s
+Validation: {'dimensions': True, 'fps': True, 'frames': True, 'h264': True, 'pixel_format': True, 'audio': True, 'audio_format': True, 'full_decode': True, 'duration': True}
+{'preview': {'seconds_including_init_mux_validation': 132.15214899999955, 'frames': 654, 'width': 1280}, 'final': {'seconds_including_init_mux_validation': 494.59727179999936, 'frames': 654, 'width': 3840}}
