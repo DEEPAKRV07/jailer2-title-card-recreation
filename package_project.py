@@ -20,7 +20,7 @@ for folder,kind in [('previews','preview'),('qa','qa')]:
 for name in ['final_run.json','final_commands.json','final_encode.log','final_frame_metrics.csv',Path(c['output']['path']).stem+'_validation.json']:
     selected.add(ROOT/'qa'/name)
 selected.add(ROOT/c['output']['path'])
-for name in ['template_test_results.json','template_tests.log','backend_selection_tests.json','test_backend_selection.py','hardware_detection.json','hardware_test.log','current_final_render.log','test_template.py','check_gpu_quality.py','measure_baseline.py','measure_gpu.py','verify_final.py']:
+for name in ['backend_selection_tests.json','test_backend_selection.py','hardware_detection.json','hardware_test.log','current_final_render.log','check_gpu_quality.py','measure_baseline.py','measure_gpu.py','verify_final.py']:
     selected.add(ROOT/'development'/name)
 for name in ['cpu_times.json','gpu_times.json','cpu_profile.txt','gpu_pixel_comparison.json','cpu_gpu_comparison.jpg','baseline_effective_config.json']:
     selected.add(ROOT/'development/benchmarks'/name)
@@ -31,7 +31,7 @@ with zipfile.ZipFile(destination,'w',compression=zipfile.ZIP_DEFLATED,compressle
     for p in files:z.write(p,Path('portrait_title_project')/p.relative_to(ROOT))
 with zipfile.ZipFile(destination) as z:
     assert z.testzip() is None
-    required=['main.py','renderer.py','gpu_renderer.py','gpu_ops.py','hardware.py','user_config.json','config.json','requirements-gpu.txt','README.md',c['output']['path']]
+    required=['main.py','renderer.py','gpu_renderer.py','gpu_ops.py','hardware.py','config.json','requirements-gpu.txt','README.md',c['output']['path']]
     assert all('portrait_title_project/'+name.replace('\\','/') in z.namelist() for name in required)
 report={'zip':str(destination),'bytes':destination.stat().st_size,'files':len(files),'crc_validation':'passed','sha256':hashlib.sha256(destination.read_bytes()).hexdigest(),'excluded':'Virtual environments, tools, caches, original reference footage, old final videos, benchmark MP4s and unrelated preview files.'}
 (ROOT.parent/'portrait_title_project_gpu_verification.json').write_text(json.dumps(report,indent=2))

@@ -1,5 +1,4 @@
 import argparse
-import copy
 import csv
 import json
 import shutil
@@ -12,14 +11,25 @@ import numpy as np
 from PIL import Image
 from renderer import Renderer
 from analyze import contact, ffmpeg, probe
-from user_settings import read_json, apply_user_settings, fingerprint
 from generated_outputs import GeneratedOutputs, migrate_known_outputs
 from hardware import select_backend, encoder_args
 
 ROOT=Path(__file__).resolve().parent
 
-def load(path,user_path=None):
-    c=apply_user_settings(read_json(path),ROOT,user_path)
+def read_config(path):
+    try:
+        return json.loads(Path(path).read_text(encoding='utf-8-sig'))
+    except json.JSONDecodeError as exc:
+        raise ValueError(f'{Path(path).name}: invalid JSON near line {exc.lineno}. Check commas, quotes and Windows path backslashes.') from exc
+    except OSError as exc:
+        raise ValueError(f'Cannot open {path}. Restore this configuration file before rendering.') from exc
+
+def fingerprint(c):
+    import hashlib
+    return hashlib.sha256(json.dumps(c,sort_keys=True).encode()).hexdigest()
+
+def load(path):
+    c=read_config(path)
     if c['sequence_preset'] not in c['presets']: raise ValueError('Unknown sequence_preset')
     o=c['output']
     if any(o[k]<=0 for k in ['width','height','fps','supersampling']): raise ValueError('Output dimensions/fps/supersampling must be positive')
@@ -169,8 +179,7 @@ def main():
     parser.add_argument('--config',default=str(ROOT/'config.json'))
     parser.add_argument('--render',action='store_true'); parser.add_argument('--preview',action='store_true'); parser.add_argument('--frames',action='store_true')
     parser.add_argument('--preset',choices=['extended_credits','portrait_reveal']); parser.add_argument('--tag',default='current',help=argparse.SUPPRESS); parser.add_argument('--validate')
-    parser.add_argument('--user-config',default=str(ROOT/'user_config.json'))
-    args=parser.parse_args(); c=load(args.config,args.user_config)
+    args=parser.parse_args(); c=load(args.config)
     if args.preset:
         c['sequence_preset']=args.preset
         if args.preset=='portrait_reveal':

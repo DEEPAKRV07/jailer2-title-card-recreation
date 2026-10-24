@@ -1,15 +1,13 @@
-# Implementation report — three settings and GPU rendering
+# Implementation report — config-driven GPU rendering
 
 Project: `D:/boys-ai-videos/portrait_title_project`
 
-Normal users edit only `portrait_image`, `display_name`, and `opening_letter` in `user_config.json`. The initial requested values are the Cyberpunk Digital Rain Portrait image, DEEPAK R V and D. Run preview.bat, inspect previews, then render.bat.
+The project now uses the original `config.json` workflow. Each title card remains independently editable in `titles[]`; there is no secondary user configuration layer.
 
 ## Files created and modified
 
 | File | Change |
 |---|---|
-| user_config.json | Exactly the three user settings |
-| user_settings.py | Shared validation and in-memory overrides, safe image paths, optional mask sidecars |
 | portrait_source.py | Nondestructive image loading, automatic/explicit masks, content-addressed foreground cache |
 | renderer.py | Shared source preparation; existing animation equations retained |
 | gpu_ops.py | CUDA image, raster, filter and colour conversion operations |
@@ -18,7 +16,7 @@ Normal users edit only `portrait_image`, `display_name`, and `opening_letter` in
 | requirements-gpu.txt | Project-local CuPy and minimal CUDA runtime/compiler dependencies |
 | main.py | Shared preview/final settings, GPU rendering/encoding, current encoded preview frames, run telemetry and validation |
 | generated_outputs.py | Hash-inventoried, directory-contained cleanup with user-file preservation |
-| preview.bat / render.bat | Explicitly load user_config.json |
+| preview.bat / render.bat | Run only against config.json |
 | setup_tools.py | Automatic GPU dependency setup |
 | qa_encoded.py | Shared effective settings and generated QA inventory |
 | remux_audio.py | Configured output paths instead of original hardcoded name |
@@ -36,17 +34,7 @@ Stable current frame names and the contact sheet are extracted from the just-enc
 
 ## Executed tests
 
-`development/test_template.py` completed **24 passing checks**, recorded in `development/template_test_results.json`:
-
-- Exactly three settings load and unrelated advanced animation parameters stay unchanged.
-- Alternate letter/name change actual GPU frames; text changes leave the portrait unchanged.
-- A different supplied source image changes the portrait; filenames with spaces, absolute Windows paths and optional mask sidecars work.
-- Old polygons are not reused for a different image.
-- Invalid JSON, empty name, invalid/multiple-character letter and missing source produce readable errors.
-- Two actual full preview runs with different names/letters replace generated artifacts at stable filenames and produce fresh title pixels.
-- Unknown sentinel files in preview/QA, all source asset hashes, existing final hashes and both configuration files remain unchanged during preview tests.
-- Both presets produce actual GPU frames; the short preset completed a full 271-frame preview with audio and decode validation.
-- Unsafe cleanup traversal is rejected.
+The current config-only verification compiled the modified runtime, generated preview frames from `config.json` on CUDA, and exercised the title fields independently. The earlier three-setting integration harness was removed with the override layer so it cannot become a stale second configuration path.
 
 Additional executed checks:
 - CUDA arithmetic and all three FFmpeg hardware encoder probes.
@@ -59,9 +47,9 @@ Additional executed checks:
 
 ## Delivered result and limitations
 
-The current final is `output/PK_4K.mp4`, with DEEPAK R V and D inside. Its filename deliberately follows unchanged advanced config. The current viewing copy is `previews/PK_preview.mp4`. Both have the same source image and settings. Current final validation and hardware evidence are in qa/final_run.json and qa/PK_4K_validation.json.
+The current final is `output/DEEPAK R V.mp4`, with DEEPAK R V and the independently configured opening letter inside. The current viewing copy is `previews/DEEPAK_R_V_preview.mp4`. Current final validation and hardware evidence are in `qa/DEEPAK R V_validation.json` and `qa/final_run.json`.
 
 GPU acceleration is confirmed on this machine, including actual rendering rather than just encoding. New-image foreground extraction and the documented unsupported operations remain CPU work. CUDA is the only implemented GPU compute API; AMD-only/Intel-only systems receive an explicit CPU-render reason while still trying hardware encoding. Exact CPU/GPU particles and hardware/software encoder bitstreams differ. These limitations and warm-cache timing conditions are detailed in PERFORMANCE.md.
 
-Automatic foreground extraction is not universally reliable; the optional sidecar mask provides a correction without changing the three user settings. Rendering remains based on the supplied still, so missing geometry/detail and the original reference's exact optical effects cannot be recovered.
+Automatic foreground extraction is not universally reliable; a custom mask selected through `portrait.mask` in `config.json` provides a correction. Rendering remains based on the supplied still, so missing geometry/detail and the original reference's exact optical effects cannot be recovered.
 

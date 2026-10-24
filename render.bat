@@ -5,7 +5,7 @@ if not exist ".venv\Scripts\python.exe" call setup.bat
 if errorlevel 1 goto failed
 ".venv\Scripts\python.exe" setup_tools.py
 if errorlevel 1 goto failed
-".venv\Scripts\python.exe" main.py --config config.json --user-config user_config.json --render
+".venv\Scripts\python.exe" main.py --config config.json --render
 if errorlevel 1 goto failed
 echo Render and verification complete. See output and qa folders.
 pause

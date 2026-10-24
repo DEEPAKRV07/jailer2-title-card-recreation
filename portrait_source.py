@@ -35,9 +35,9 @@ def prepare_source(path,settings,root,seed):
         # A conservative black-background fallback keeps actual illuminated source pixels.
         gray=cv2.cvtColor(src,cv2.COLOR_BGR2GRAY)
         if np.mean(gray<20)<.4:
-            raise ValueError('Automatic extraction could not isolate this portrait. Add a same-size white-subject/black-background file named '+path.stem+'.mask.png beside it.')
+            raise ValueError('Automatic extraction could not isolate this portrait. Create a same-size white-subject/black-background mask and set portrait.mask to its path in config.json.')
         alpha=np.where(gray>8,255,0).astype(np.uint8)
-        print('Foreground fallback: preserving lit source pixels on the existing black background. Inspect the preview; use a .mask.png sidecar for finer isolation.',flush=True)
+        print('Foreground fallback: preserving lit source pixels on the existing black background. Inspect the preview; set portrait.mask in config.json for finer isolation.',flush=True)
     cv2.imwrite(str(file),alpha)
     (cache/(key+'.json')).write_text(json.dumps({'source_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'backend':'CPU OpenCV GrabCut','seconds':time.perf_counter()-start},indent=2))
     return src,alpha
