@@ -43,7 +43,7 @@
     "bt709",
     "-movflags",
     "+faststart",
-    "D:\\boys-ai-videos\\portrait_title_project\\previews\\DEEPAK_R_V_preview_video_only.mp4"
+    "D:\\boys-ai-videos\\portrait_title_project\\previews\\DHANUSH_preview_video_only.mp4"
   ],
   [
     "D:\\boys-ai-videos\\portrait_title_project\\.venv\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
@@ -51,7 +51,7 @@
     "-v",
     "warning",
     "-i",
-    "D:\\boys-ai-videos\\portrait_title_project\\previews\\DEEPAK_R_V_preview_video_only.mp4",
+    "D:\\boys-ai-videos\\portrait_title_project\\previews\\DHANUSH_preview_video_only.mp4",
     "-i",
     "D:\\boys-ai-videos\\portrait_title_project\\assets\\extended_original_audio.m4a",
     "-map",
@@ -74,6 +74,6 @@
     "21.8",
     "-movflags",
     "+faststart",
-    "D:\\boys-ai-videos\\portrait_title_project\\previews\\DEEPAK_R_V_preview_pending.mp4"
+    "D:\\boys-ai-videos\\portrait_title_project\\previews\\DHANUSH_preview_pending.mp4"
   ]
 ]

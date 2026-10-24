@@ -43,6 +43,10 @@ When a nonempty later card overlaps the main card, the main title fades away as 
 
 Set `typography.font` and `typography.fallback_font` to existing font files; fonts are not bundled. Global typography controls tracking and safe area. `palette` supplies RGB colours from 0 to 255.
 
+Unicode symbols can be pasted directly into any text field, for example `NADIPU ★ ASURAN`. Missing characters use `typography.fallback_font`, then the ordered `typography.fallback_fonts` list. By default the list tries Windows Segoe UI Symbol and Segoe UI Emoji. Existing letters keep their original font; fallback glyphs share the same jeweled material, particle reveal and timing. Run `setup.bat` after updating the code to install the font-coverage dependency.
+
+Supported single-character emoji render as monochrome glyphs, not full-colour stickers. Emoji presentation selectors are ignored. Joined emoji sequences are not supported; missing glyphs produce an explicit error instead of a replacement box. Add an installed font path to `fallback_fonts` when needed. Unicode coverage is font-dependent; complex-script shaping is outside this character-by-character layout.
+
 ## Sequence, effects and audio
 
 `sequence_preset` accepts `extended_credits` or `portrait_reveal`. The extended preset lasts 21.8 seconds; the short preset is 271 frames at 30 fps. The CLI `--preset portrait_reveal` adds a filename suffix. Editing `sequence_preset` directly does not add that suffix, so also choose suitable output paths.

@@ -47,7 +47,7 @@ Additional executed checks:
 
 ## Delivered result and limitations
 
-The repository includes the example final `output/DEEPAK R V.mp4`, validated in `qa/DEEPAK R V_validation.json`. New renders follow `output.path` in `config.json` (committed default: `output/DEEPAKRV.mp4`); previews follow `output.preview_path`. Per-run hardware evidence is written to `qa/final_run.json` or `qa/preview_run.json`. Those reports describe their recorded run and may refer to an earlier output/configuration.
+The repository retains the example final `output/DEEPAK R V.mp4`, validated in `qa/DEEPAK R V_validation.json`. The current configuration renders `output/DHANUSH.mp4` and `previews/DHANUSH_preview.mp4`, using a centered portrait and Unicode star in the main card. Per-run hardware evidence is written to `qa/final_run.json` or `qa/preview_run.json`. Those reports describe their recorded run and may refer to an earlier output/configuration.
 
 GPU acceleration is confirmed on this machine, including actual rendering rather than just encoding. New-image foreground extraction and the documented unsupported operations remain CPU work. CUDA is the only implemented GPU compute API; AMD-only/Intel-only systems receive an explicit CPU-render reason while still trying hardware encoding. Exact CPU/GPU particles and hardware/software encoder bitstreams differ. These limitations and warm-cache timing conditions are detailed in PERFORMANCE.md.
 

@@ -39,13 +39,17 @@ Use 64-bit Windows and Python 3.11 (tested with 3.11.9), with **Add Python to PA
 
 You can also double-click the batch files. Preview/render launchers run setup if `.venv` is missing. No virtual-environment activation is required.
 
+After pulling an update, rerun `setup.bat` before previewing or rendering so an existing environment receives any new dependencies, including Unicode font coverage support.
+
 ## Outputs and manual commands
 
 The committed config produces a 1280 × 720 preview and 3840 × 2160 final at 30 fps. The extended sequence is 21.8 seconds. Filenames come from `output.preview_path` and `output.path`; changing a title does not rename files.
 
-- Configured preview: `previews/DEEPAK_R_V_preview.mp4`.
-- Configured final: `output/DEEPAKRV.mp4`.
+- Configured preview: [previews/DHANUSH_preview.mp4](previews/DHANUSH_preview.mp4).
+- Configured final: [output/DHANUSH.mp4](output/DHANUSH.mp4).
 - Separately included example: [output/DEEPAK R V.mp4](output/DEEPAK%20R%20V.mp4).
+
+The current example uses a centered portrait, opening `D`, `NADIPU ★ ASURAN` and a later `DHANUSH` card. Symbols use per-character fallback fonts while preserving the jeweled material. Supported single-character emoji render in monochrome; see [CONFIGURATION.md](CONFIGURATION.md) for the font list and limitations.
 
 Run from the project folder after setup:
 

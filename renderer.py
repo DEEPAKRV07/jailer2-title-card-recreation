@@ -6,6 +6,7 @@ import cv2
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 from portrait_source import prepare_source
+from font_fallback import line_fonts, normalize_text
 
 def ease(x):
     x=np.clip(x,0,1)
@@ -96,20 +97,29 @@ class Renderer:
         raise ValueError('No configured font found. Set typography.font to an installed TTF font.')
 
     def prepare_text(self,text,height,position,tracking,align='center'):
+        text=normalize_text(text)
         mask=Image.new('L',(self.w,self.h)); d=ImageDraw.Draw(mask)
         size=round(height*self.h*1.33); font=self.font(size); gap=tracking*self.h
-        lines=text.split('\n'); widths=[sum(font.getlength(ch) for ch in line)+max(0,len(line)-1)*gap for line in lines]
+        lines=text.split('\n')
+        fonts=[line_fonts(line,font,self.c['typography'],self.root,size) for line in lines]
+        widths=[sum(f.getlength(ch) for ch,f in zip(line,fs))+max(0,len(line)-1)*gap for line,fs in zip(lines,fonts)]
         maxwidth=self.w*(1-2*self.c['typography']['safe_area'])
         if max(widths)>maxwidth:
             ratio=maxwidth/max(widths); size=max(8,round(size*ratio)); gap*=ratio; font=self.font(size)
-            widths=[sum(font.getlength(ch) for ch in line)+max(0,len(line)-1)*gap for line in lines]
+            fonts=[line_fonts(line,font,self.c['typography'],self.root,size) for line in lines]
+            widths=[sum(f.getlength(ch) for ch,f in zip(line,fs))+max(0,len(line)-1)*gap for line,fs in zip(lines,fonts)]
         lineheight=size*1.05
-        for i,(line,width) in enumerate(zip(lines,widths)):
-            bbox=font.getbbox(line or 'A'); actual=bbox[3]-bbox[1]
+        for i,(line,width,fs) in enumerate(zip(lines,widths,fonts)):
+            bbox=font.getbbox(line or 'A')
+            if any(f is not font for f in fs):
+                boxes=[(f.getbbox(ch),font.getmetrics()[0]-f.getmetrics()[0]) for ch,f in zip(line,fs) if not ch.isspace()]
+                if boxes: bbox=(0,min(b[1]+dy for b,dy in boxes),0,max(b[3]+dy for b,dy in boxes))
+            actual=bbox[3]-bbox[1]
             y=position[1]*self.h+(i-(len(lines)-1)/2)*lineheight-actual/2-bbox[1]
             x=position[0]*self.w-(width/2 if align=='center' else width if align=='right' else 0)
-            for ch in line:
-                d.text((round(x),round(y)),ch,font=font,fill=255); x+=font.getlength(ch)+gap
+            for ch,f in zip(line,fs):
+                dy=font.getmetrics()[0]-f.getmetrics()[0]
+                d.text((round(x),round(y+dy)),ch,font=f,fill=255); x+=f.getlength(ch)+gap
         m=np.array(mask,dtype=np.float32)/255
         spacing=max(3.0,self.c['typography']['jewel_spacing_1080']*self.scale*(1.8 if len(text)==1 else 1))
         # Analytic miniature faceted gemstones, rendered within the editable font mask.

@@ -8,13 +8,13 @@
       "fps": 30,
       "supersampling": 1,
       "duration": null,
-      "path": "output/DEEPAK R V.mp4",
+      "path": "output/DHANUSH.mp4",
       "crf": 17,
       "encoder": "libx264",
       "encoder_preset": "fast",
       "bitrate": null,
       "preview_width": 1280,
-      "preview_path": "previews/DEEPAK_R_V_preview.mp4",
+      "preview_path": "previews/DHANUSH_preview.mp4",
       "preview_crf": 20
     },
     "presets": {
@@ -34,7 +34,7 @@
       }
     },
     "portrait": {
-      "image": "D:\\boys-ai-videos\\portrait_title_project\\assets\\Cyberpunk Digital Rain Portrait.png",
+      "image": "assets/D-SQUAREBOX.png",
       "mask": null,
       "fit": "contain",
       "crop": [
@@ -45,7 +45,7 @@
       ],
       "subject_polygon": null,
       "anchor": [
-        0.57,
+        0.5,
         0.055
       ],
       "height_fraction": 0.94,
@@ -117,6 +117,10 @@
     "typography": {
       "font": "C:/Windows/Fonts/georgiab.ttf",
       "fallback_font": "C:/Windows/Fonts/timesbd.ttf",
+      "fallback_fonts": [
+        "C:/Windows/Fonts/seguisym.ttf",
+        "C:/Windows/Fonts/seguiemj.ttf"
+      ],
       "tracking": 0.012,
       "alignment": "center",
       "safe_area": 0.08,
@@ -138,7 +142,7 @@
     },
     "titles": [
       {
-        "text": "DEEPAK R V",
+        "text": "NADIPU \u2605 ASURAN",
         "subtitle": "",
         "start": 12.7,
         "end": 21.8,
@@ -154,7 +158,7 @@
         "alignment": "center"
       },
       {
-        "text": "POLLADHAVAN",
+        "text": "",
         "subtitle": "",
         "start": 16.0,
         "end": 18.0,
@@ -167,7 +171,7 @@
         ]
       },
       {
-        "text": "007",
+        "text": "",
         "subtitle": "",
         "start": 18.0,
         "end": 19.5,
@@ -180,7 +184,7 @@
         ]
       },
       {
-        "text": "RVD",
+        "text": "DHANUSH",
         "subtitle": "",
         "start": 19.5,
         "end": 21.8,
@@ -224,7 +228,7 @@
       ]
     }
   },
-  "effective_config_sha256": "c6392d932881006f4c083718e118ded68fc6e858c5b6500a81c3526df080dec9",
+  "effective_config_sha256": "25669afe199065d087e80b554894af4f8bebb434429381c6a70ef309ffe6af2b",
   "hardware": {
     "cuda_driver": {
       "devices": 1,
@@ -267,7 +271,7 @@
         "compiled": true,
         "usable": false,
         "returncode": 2981409195,
-        "log": "[h264_qsv @ 00000205afa54c80] Error creating a MFX session: -9.\n[h264_qsv @ 00000205afa54c80] The current mfx implementation is not supported, try next mfx implementation.\n[h264_qsv @ 00000205afa54c80] Error creating a MFX session: -9.\n[vost#0:0/h264_qsv @ 00000205afa54a00] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 00000205afa55c00] Error sending frames to consumers: Unknown error occurred\n[vf#0:0 @ 00000205afa55c00] Task finished with error code: -1313558101 (Unknown error occurred)\n[vf#0:0 @ 00000205afa55c00] Terminating thread with return code -1313558101 (Unknown error occurred)\n[vost#0:0/h264_qsv @ 00000205afa54a00] Could not open encoder before EOF\n[vost#0:0/h264_qsv @ 00000205afa54a00] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/h264_qsv @ 00000205afa54a00] Terminating thread with return code -22 (Invalid argument)\n[out#0/null @ 00000205af9fabc0] Nothing was written into output file, because at least one of its streams received no packets.",
+        "log": "[h264_qsv @ 000001c877704c80] Error creating a MFX session: -9.\n[h264_qsv @ 000001c877704c80] The current mfx implementation is not supported, try next mfx implementation.\n[h264_qsv @ 000001c877704c80] Error creating a MFX session: -9.\n[vost#0:0/h264_qsv @ 000001c877704a00] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 000001c877705c00] Error sending frames to consumers: Unknown error occurred\n[vf#0:0 @ 000001c877705c00] Task finished with error code: -1313558101 (Unknown error occurred)\n[vf#0:0 @ 000001c877705c00] Terminating thread with return code -1313558101 (Unknown error occurred)\n[vost#0:0/h264_qsv @ 000001c877704a00] Could not open encoder before EOF\n[vost#0:0/h264_qsv @ 000001c877704a00] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/h264_qsv @ 000001c877704a00] Terminating thread with return code -22 (Invalid argument)\n[out#0/null @ 000001c8776aabc0] Nothing was written into output file, because at least one of its streams received no packets.",
         "test_command": [
           "D:\\boys-ai-videos\\portrait_title_project\\.venv\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
           "-hide_banner",
@@ -318,7 +322,7 @@
       "backend": "cupy_cuda",
       "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
       "self_test_sum": 22898100224.0,
-      "self_test_cuda_ms": 96.54595184326172,
+      "self_test_cuda_ms": 91.60649871826172,
       "cupy_version": "14.2.0"
     },
     "encoder": "h264_nvenc",
@@ -328,23 +332,23 @@
     "backend": "CuPy CUDA",
     "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
     "frames_executed": 654,
-    "cuda_event_frame_ms": 14223.572807312012,
+    "cuda_event_frame_ms": 13980.5667886734,
     "kernel_operation_counts": {
       "cuda_grayscale": 655,
       "cuda_image_sample": 2195,
       "cuda_gaussian": 655,
       "cuda_sobel": 2,
-      "cuda_morphology": 5,
+      "cuda_morphology": 3,
       "cuda_composite": 654,
       "cuda_rgb_to_nv12": 654,
-      "cuda_primitive_raster": 771,
+      "cuda_primitive_raster": 777,
       "cuda_temporal_blur": 653,
-      "cuda_text_reveal": 335,
+      "cuda_text_reveal": 336,
       "cuda_particle_equations": 290
     },
     "cuda_runtime": 12090,
     "cuda_driver": 13010,
-    "device_memory_used_bytes": 64637952,
+    "device_memory_used_bytes": 49890304,
     "cpu_exceptions": [
       "File/image decoding and PNG/JPEG writing",
       "Pillow/FreeType font shaping and glyph masks (no matching GPU API)",
@@ -354,10 +358,10 @@
       "FFmpeg AAC audio encoding and MP4 muxing"
     ]
   },
-  "seconds_including_init_mux_validation": 21.010084599999573,
-  "seconds_after_renderer_init": 20.41123628616333,
+  "seconds_including_init_mux_validation": 20.705832400000872,
+  "seconds_after_renderer_init": 19.973897457122803,
   "frames": 654,
-  "output": "D:\\boys-ai-videos\\portrait_title_project\\previews\\DEEPAK_R_V_preview.mp4",
+  "output": "D:\\boys-ai-videos\\portrait_title_project\\previews\\DHANUSH_preview.mp4",
   "width": 1280,
   "height": 720
 }

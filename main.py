@@ -175,6 +175,9 @@ def validate(path,c,width=None,height=None,count=None,report_name=None):
     if not all(checks.values()): raise RuntimeError('Validation failed; consult qa report')
 
 def main():
+    # Windows redirected output may default to a code page without title symbols.
+    for stream in (sys.stdout,sys.stderr):
+        if hasattr(stream,'reconfigure'): stream.reconfigure(encoding='utf-8',errors='backslashreplace')
     parser=argparse.ArgumentParser(description='Reusable GPU portrait title sequence')
     parser.add_argument('--config',default=str(ROOT/'config.json'))
     parser.add_argument('--render',action='store_true'); parser.add_argument('--preview',action='store_true'); parser.add_argument('--frames',action='store_true')

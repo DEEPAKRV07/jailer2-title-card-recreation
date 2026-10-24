@@ -7,9 +7,10 @@ __pycache__/
 
 # Keep the current deliverables, omit obsolete renders and temporary copies.
 output/*.mp4
-!output/PK_4K.mp4
+!output/DEEPAK R V.mp4
+!output/DHANUSH.mp4
 previews/*.mp4
-!previews/PK_preview.mp4
+!previews/DHANUSH_preview.mp4
 development/benchmarks/*.mp4
 development/preserved_outputs/
 development/test cases/
