@@ -1,5 +1,7 @@
 # Delivered render report
 
+> Historical report for the original KARTHIKEYAN render. Filenames, text and settings below describe that earlier delivery, not the current defaults. Use [README.md](README.md) to run the project and [CONFIGURATION.md](CONFIGURATION.md) to edit it.
+
 Rendered and verified on 24 October 2026.
 
 - Master: output/KARTHIKEYAN_4K.mp4

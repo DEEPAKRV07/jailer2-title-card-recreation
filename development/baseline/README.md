@@ -1,5 +1,7 @@
 # KARTHIKEYAN — procedural portrait title sequence
 
+> Archived CPU baseline for performance comparisons. Instructions and behavior below apply only to this frozen version. For the current GPU renderer and independent config fields, use the [project README](../../README.md) and [configuration guide](../../CONFIGURATION.md). Do not use this directory as the main application.
+
 This project generates a faceted star, jeweled **K**, particle field, digital-rain portrait reveal and **KARTHIKEYAN** name card. Every output video pixel comes from Python/NumPy/OpenCV/Pillow procedures and the supplied portrait JPEG. Reference video pixels appear only in clearly labelled comparison sheets, never in rendered footage.
 
 The default sequence is 21.8 seconds, 3840 × 2160, 30 fps. The portrait retains the supplied face, glasses, hairstyle, clothing and pose. A feathered silhouette removes the still's outer background. Fixed spatial arrival times and falling particles reveal the image in fragments. The name and opening letter use separately generated font masks.

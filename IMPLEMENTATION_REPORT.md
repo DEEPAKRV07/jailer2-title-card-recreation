@@ -1,6 +1,6 @@
 # Implementation report — config-driven GPU rendering
 
-Project: `D:/boys-ai-videos/portrait_title_project`
+For current run commands, see [README.md](README.md). For editable fields, see [CONFIGURATION.md](CONFIGURATION.md). Verification below records completed runs, not later configuration edits.
 
 The project now uses the original `config.json` workflow. Each title card remains independently editable in `titles[]`; there is no secondary user configuration layer.
 
@@ -47,7 +47,7 @@ Additional executed checks:
 
 ## Delivered result and limitations
 
-The current final is `output/DEEPAK R V.mp4`, with DEEPAK R V and the independently configured opening letter inside. The current viewing copy is `previews/DEEPAK_R_V_preview.mp4`. Current final validation and hardware evidence are in `qa/DEEPAK R V_validation.json` and `qa/final_run.json`.
+The repository includes the example final `output/DEEPAK R V.mp4`, validated in `qa/DEEPAK R V_validation.json`. New renders follow `output.path` in `config.json` (committed default: `output/DEEPAKRV.mp4`); previews follow `output.preview_path`. Per-run hardware evidence is written to `qa/final_run.json` or `qa/preview_run.json`. Those reports describe their recorded run and may refer to an earlier output/configuration.
 
 GPU acceleration is confirmed on this machine, including actual rendering rather than just encoding. New-image foreground extraction and the documented unsupported operations remain CPU work. CUDA is the only implemented GPU compute API; AMD-only/Intel-only systems receive an explicit CPU-render reason while still trying hardware encoding. Exact CPU/GPU particles and hardware/software encoder bitstreams differ. These limitations and warm-cache timing conditions are detailed in PERFORMANCE.md.
 
