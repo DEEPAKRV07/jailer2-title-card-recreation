@@ -1,5 +1,5 @@
 {
-  "file": "D:\\boys-ai-videos\\portrait_title_project\\previews\\PK_preview.mp4",
+  "file": "D:\\boys-ai-videos\\portrait_title_project\\previews\\DEEPAK_R_V_preview.mp4",
   "checks": {
     "dimensions": true,
     "fps": true,
@@ -45,7 +45,7 @@
         "start_time": "0.000000",
         "duration_ts": 334848,
         "duration": "21.800000",
-        "bit_rate": "2623372",
+        "bit_rate": "2381652",
         "bits_per_raw_sample": "8",
         "nb_frames": "654",
         "extradata_size": 53,
@@ -130,7 +130,7 @@
       }
     ],
     "format": {
-      "filename": "D:\\boys-ai-videos\\portrait_title_project\\previews\\PK_preview_pending.mp4",
+      "filename": "D:\\boys-ai-videos\\portrait_title_project\\previews\\DEEPAK_R_V_preview_pending.mp4",
       "nb_streams": 2,
       "nb_programs": 0,
       "nb_stream_groups": 0,
@@ -138,8 +138,8 @@
       "format_long_name": "QuickTime / MOV",
       "start_time": "0.000000",
       "duration": "21.800000",
-      "size": "7703590",
-      "bit_rate": "2827005",
+      "size": "7044886",
+      "bit_rate": "2585279",
       "probe_score": 100,
       "tags": {
         "major_brand": "isom",

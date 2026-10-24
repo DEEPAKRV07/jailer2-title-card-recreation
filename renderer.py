@@ -244,10 +244,14 @@ class Renderer:
             for i,card in enumerate(cards):
                 if not card['text']: continue
                 op=window(t,card['start'],card['end'],card['fade_in'],card['fade_out'])
-                # A configured later card takes over the long main-name hold.
+                # Once the first later card takes over, the main name stays gone.
+                # Per-card windows fall to zero at adjacent fade boundaries;
+                # using them here briefly resurrected the main name between cards.
                 if i==0:
-                    for later in cards[1:]:
-                        if later['text']: op*=1-window(t,later['start'],later['end'],later['fade_in'],later['fade_out'])
+                    later_cards=[later for later in cards[1:] if later['text'] and later['end']>card['start'] and later['start']<card['end']]
+                    if later_cards:
+                        first_later=min(later_cards,key=lambda later:later['start'])
+                        op*=1-float(ease((t-first_later['start'])/first_later['fade_in']))
                 if op<.001: continue
                 data=self.texts[i]; progress=float(ease((t-card['start'])/card['fade_in']))
                 text+=self.text_frame(data,t,progress)*op; self.glints(text,data,t,op)

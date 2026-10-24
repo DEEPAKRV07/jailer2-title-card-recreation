@@ -8,13 +8,13 @@
       "fps": 30,
       "supersampling": 1,
       "duration": null,
-      "path": "output/PK_4K.mp4",
+      "path": "output/DEEPAK R V.mp4",
       "crf": 17,
       "encoder": "libx264",
       "encoder_preset": "fast",
       "bitrate": null,
       "preview_width": 1280,
-      "preview_path": "previews/PK_preview.mp4",
+      "preview_path": "previews/DEEPAK_R_V_preview.mp4",
       "preview_crf": 20
     },
     "presets": {
@@ -154,7 +154,7 @@
         "alignment": "center"
       },
       {
-        "text": "",
+        "text": "POLLADHAVAN",
         "subtitle": "",
         "start": 16.0,
         "end": 18.0,
@@ -167,7 +167,7 @@
         ]
       },
       {
-        "text": "",
+        "text": "007",
         "subtitle": "",
         "start": 18.0,
         "end": 19.5,
@@ -180,7 +180,7 @@
         ]
       },
       {
-        "text": "",
+        "text": "RVD",
         "subtitle": "",
         "start": 19.5,
         "end": 21.8,
@@ -224,7 +224,7 @@
       ]
     }
   },
-  "effective_config_sha256": "900fa0a6b731af6b14486225ec16c86ba4071290dd92b8aadd64bbd25131583d",
+  "effective_config_sha256": "c6392d932881006f4c083718e118ded68fc6e858c5b6500a81c3526df080dec9",
   "hardware": {
     "cuda_driver": {
       "devices": 1,
@@ -267,7 +267,7 @@
         "compiled": true,
         "usable": false,
         "returncode": 2981409195,
-        "log": "[h264_qsv @ 0000018da7ca4c80] Error creating a MFX session: -9.\n[h264_qsv @ 0000018da7ca4c80] The current mfx implementation is not supported, try next mfx implementation.\n[h264_qsv @ 0000018da7ca4c80] Error creating a MFX session: -9.\n[vost#0:0/h264_qsv @ 0000018da7ca4a00] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 0000018da7ca5c00] Error sending frames to consumers: Unknown error occurred\n[vf#0:0 @ 0000018da7ca5c00] Task finished with error code: -1313558101 (Unknown error occurred)\n[vf#0:0 @ 0000018da7ca5c00] Terminating thread with return code -1313558101 (Unknown error occurred)\n[vost#0:0/h264_qsv @ 0000018da7ca4a00] Could not open encoder before EOF\n[vost#0:0/h264_qsv @ 0000018da7ca4a00] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/h264_qsv @ 0000018da7ca4a00] Terminating thread with return code -22 (Invalid argument)\n[out#0/null @ 0000018da7c4abc0] Nothing was written into output file, because at least one of its streams received no packets.",
+        "log": "[h264_qsv @ 000001b575fd6c40] Error creating a MFX session: -9.\n[h264_qsv @ 000001b575fd6c40] The current mfx implementation is not supported, try next mfx implementation.\n[h264_qsv @ 000001b575fd6c40] Error creating a MFX session: -9.\n[vost#0:0/h264_qsv @ 000001b575fd68c0] Error while opening encoder - maybe incorrect parameters such as bit_rate, rate, width or height.\n[vf#0:0 @ 000001b575fd8ac0] Error sending frames to consumers: Unknown error occurred\n[vf#0:0 @ 000001b575fd8ac0] Task finished with error code: -1313558101 (Unknown error occurred)\n[vf#0:0 @ 000001b575fd8ac0] Terminating thread with return code -1313558101 (Unknown error occurred)\n[vost#0:0/h264_qsv @ 000001b575fd68c0] Could not open encoder before EOF\n[vost#0:0/h264_qsv @ 000001b575fd68c0] Task finished with error code: -22 (Invalid argument)\n[vost#0:0/h264_qsv @ 000001b575fd68c0] Terminating thread with return code -22 (Invalid argument)\n[out#0/null @ 000001b575f7b3c0] Nothing was written into output file, because at least one of its streams received no packets.",
         "test_command": [
           "D:\\boys-ai-videos\\portrait_title_project\\.venv\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
           "-hide_banner",
@@ -318,7 +318,7 @@
       "backend": "cupy_cuda",
       "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
       "self_test_sum": 22898100224.0,
-      "self_test_cuda_ms": 142.91920471191406,
+      "self_test_cuda_ms": 93.62095642089844,
       "cupy_version": "14.2.0"
     },
     "encoder": "h264_nvenc",
@@ -328,23 +328,23 @@
     "backend": "CuPy CUDA",
     "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
     "frames_executed": 654,
-    "cuda_event_frame_ms": 43232.93135070801,
+    "cuda_event_frame_ms": 46452.12268638611,
     "kernel_operation_counts": {
       "cuda_grayscale": 655,
       "cuda_image_sample": 2195,
       "cuda_gaussian": 655,
       "cuda_sobel": 2,
-      "cuda_morphology": 2,
+      "cuda_morphology": 5,
       "cuda_composite": 654,
       "cuda_rgb_to_nv12": 654,
       "cuda_primitive_raster": 776,
       "cuda_temporal_blur": 653,
-      "cuda_text_reveal": 325,
+      "cuda_text_reveal": 335,
       "cuda_particle_equations": 290
     },
     "cuda_runtime": 12090,
     "cuda_driver": 13010,
-    "device_memory_used_bytes": 381665280,
+    "device_memory_used_bytes": 580733952,
     "cpu_exceptions": [
       "File/image decoding and PNG/JPEG writing",
       "Pillow/FreeType font shaping and glyph masks (no matching GPU API)",
@@ -354,10 +354,10 @@
       "FFmpeg AAC audio encoding and MP4 muxing"
     ]
   },
-  "seconds_including_init_mux_validation": 78.97839609999937,
-  "seconds_after_renderer_init": 77.70920133590698,
+  "seconds_including_init_mux_validation": 76.30643360000067,
+  "seconds_after_renderer_init": 74.94174671173096,
   "frames": 654,
-  "output": "D:\\boys-ai-videos\\portrait_title_project\\output\\PK_4K.mp4",
+  "output": "D:\\boys-ai-videos\\portrait_title_project\\output\\DEEPAK R V.mp4",
   "width": 3840,
   "height": 2160
 }

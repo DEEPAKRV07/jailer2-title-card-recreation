@@ -7,13 +7,13 @@
     "fps": 30,
     "supersampling": 1,
     "duration": null,
-    "path": "output/PK_4K.mp4",
+    "path": "output/DEEPAKRV.mp4",
     "crf": 17,
     "encoder": "libx264",
     "encoder_preset": "fast",
     "bitrate": null,
     "preview_width": 1280,
-    "preview_path": "previews/PK_preview.mp4",
+    "preview_path": "previews/DEEPAK_R_V_preview.mp4",
     "preview_crf": 20
   },
   "presets": {
@@ -33,7 +33,7 @@
     }
   },
   "portrait": {
-    "image": "assets/PK-Glitched Cyberpunk Portrait in Digital Rain.png",
+    "image": "assets/Cyberpunk Digital Rain Portrait.png",
     "mask": null,
     "fit": "contain",
     "crop": [
@@ -137,7 +137,7 @@
   },
   "titles": [
     {
-      "text": "PK",
+      "text": "DEEPAK R V",
       "subtitle": "",
       "start": 12.7,
       "end": 21.8,
@@ -153,7 +153,7 @@
       "alignment": "center"
     },
     {
-      "text": "PRABHUKUMAR",
+      "text": "POLLADHAVAN",
       "subtitle": "",
       "start": 16.0,
       "end": 18.0,
@@ -166,7 +166,7 @@
       ]
     },
     {
-      "text": "JILLA",
+      "text": "007",
       "subtitle": "",
       "start": 18.0,
       "end": 19.5,
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "text": "PRABHU",
+      "text": "RVD",
       "subtitle": "",
       "start": 19.5,
       "end": 21.8,
